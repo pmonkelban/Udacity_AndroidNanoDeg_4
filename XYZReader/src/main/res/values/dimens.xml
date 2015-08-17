@@ -1,4 +1,15 @@
 <resources>
+
+    <dimen name="image_preview_height">200dp</dimen>
+
+    <dimen name="padding_horz_sm">2dp</dimen>
+    <dimen name="padding_horz_md">4dp</dimen>
+    <dimen name="padding_horz_lg">6dp</dimen>
+
+    <dimen name="padding_vert_sm">2dp</dimen>
+    <dimen name="padding_vert_md">4dp</dimen>
+    <dimen name="padding_vert_lg">6dp</dimen>
+
     <!-- detail -->
     <dimen name="detail_title_text_size">32sp</dimen>
     <dimen name="detail_body_text_size">22sp</dimen>

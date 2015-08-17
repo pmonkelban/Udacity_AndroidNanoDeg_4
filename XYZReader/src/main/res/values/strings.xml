@@ -9,4 +9,8 @@
 
     <string name="up">Up</string>
 
+
+    <!-- Font characteristics -->
+    <string name="font_family">sans-serif-condensed</string>
+
 </resources>

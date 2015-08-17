@@ -1,3 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+
 <!-- File created by the Android Action Bar Style Generator
 
      Copyright (C) 2012 readyState Software Ltd
@@ -17,12 +19,27 @@
 
 <resources>
 
-    <style name="Theme.Bacon" parent="@style/Theme.AppCompat.Light.NoActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="android:textColor">@color/light_text</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+
+        <item name="colorPrimary">@color/orange_500</item>
+        <item name="colorPrimaryDark">@color/orange_800</item>
+        <item name="colorAccent">@color/blue_A500</item>
 
     </style>
 
-    <style name="Theme.Bacon.Detail">
-        <item name="android:statusBarColor">@android:color/transparent</item>
+    <style name="AppTheme.Title" parent="AppTheme">
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_gravity">top</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AppTheme.SubTitle" parent="AppTheme">
+        <item name="android:textSize">8sp</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:textStyle">normal</item>
     </style>
 
 </resources>

@@ -18,8 +18,26 @@
 <resources>
     <color name="photo_placeholder">#ccc</color>
 
-    <color name="theme_primary">#04561A</color>
-    <color name="theme_primary_dark">#04561A</color>
-    <color name="theme_accent">#04561A</color>
-    <color name="ltgray">#ffe0e0e0</color>
+    <color name="primary">#FF5722</color>
+
+    <!--
+    Color palette borrowed from:
+    https://www.google.com/design/spec/style/color.html#color-color-palette
+    Deep Orange
+    -->
+    <color name="orange_50">#FBE9E7</color>
+    <color name="orange_100">#FFCCBC</color>
+    <color name="orange_200">#FFAB91</color>
+    <color name="orange_300">#FF8A65</color>
+    <color name="orange_400">#FF7043</color>
+    <color name="orange_500">#FF5722</color>
+    <color name="orange_600">#F4511E</color>
+    <color name="orange_700">#E64A19</color>
+    <color name="orange_800">#D84315</color>
+    <color name="orange_900">#BF360C</color>
+
+    <color name="blue_A500">#448AFF</color>
+    <color name="light_text">#FFFFFF</color>
+    <color name="dark_text">#212121</color>
+
 </resources>
