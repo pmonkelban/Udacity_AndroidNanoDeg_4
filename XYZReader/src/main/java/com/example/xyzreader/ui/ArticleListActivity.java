@@ -32,7 +32,7 @@ import com.example.xyzreader.data.UpdaterService;
 public class ArticleListActivity extends AppCompatActivity implements
         LoaderManager.LoaderCallbacks<Cursor> {
 
-    private Toolbar mToolbar;
+//    private Toolbar mToolbar;
     private SwipeRefreshLayout mSwipeRefreshLayout;
     private RecyclerView mRecyclerView;
 
@@ -41,11 +41,16 @@ public class ArticleListActivity extends AppCompatActivity implements
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_article_list);
 
-        mToolbar = (Toolbar) findViewById(R.id.toolbar);
+//        mToolbar = (Toolbar) findViewById(R.id.toolbar);
 
 
         final View toolbarContainerView = findViewById(R.id.collapsing_toolbar_layout);
 
+        /*
+        * Find the SwipeRefreshLayout and add a listener to it.
+        * When the user swipes down, the OnRefreshListener's onRefresh() method
+        * gets called.
+        */
         mSwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipe_refresh_layout);
 
         mSwipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
@@ -56,6 +61,7 @@ public class ArticleListActivity extends AppCompatActivity implements
         });
 
         mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+
         getLoaderManager().initLoader(0, null, this);
 
         if (savedInstanceState == null) {
@@ -70,6 +76,7 @@ public class ArticleListActivity extends AppCompatActivity implements
     @Override
     protected void onStart() {
         super.onStart();
+
         registerReceiver(mRefreshingReceiver,
                 new IntentFilter(UpdaterService.BROADCAST_ACTION_STATE_CHANGE));
     }

@@ -1,5 +1,9 @@
 <resources>
 
+    <dimen name="padding_sm">2dp</dimen>
+    <dimen name="padding_md">4dp</dimen>
+    <dimen name="padding_lg">6dp</dimen>
+
     <dimen name="padding_horz_sm">2dp</dimen>
     <dimen name="padding_horz_md">4dp</dimen>
     <dimen name="padding_horz_lg">6dp</dimen>
