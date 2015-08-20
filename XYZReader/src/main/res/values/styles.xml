@@ -26,7 +26,9 @@
 
         <item name="colorPrimary">@color/blue_800</item>
         <item name="colorPrimaryDark">@color/blue_900</item>
-        <item name="colorAccent">@color/yellow_700</item>
+        <item name="colorAccent">@color/yellow_400</item>
+
+        <item name="android:textColorLink">@color/blue_900</item>
 
     </style>
 
@@ -54,9 +56,10 @@
     </style>
 
     <style name="AppTheme.BodyText" parent="AppTheme">
+        <item name="android:colorBackground">@color/blue_100</item>
         <item name="android:textSize">12sp</item>
         <item name="android:textStyle">normal</item>
-        <item name="android:textColor">@android:color/holo_red_light</item>
+        <item name="android:textColor">@android:color/black</item>
         <item name="android:lineSpacingMultiplier">@fraction/detail_body_line_spacing_multiplier</item>
 
     </style>
