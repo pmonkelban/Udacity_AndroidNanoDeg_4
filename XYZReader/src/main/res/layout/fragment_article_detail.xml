@@ -6,7 +6,7 @@
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="256dp"
-        android:elevation="4dp">
+        android:elevation="@dimen/std_elevation">
 
         <android.support.design.widget.CollapsingToolbarLayout
             android:id="@+id/collapsing_toolbar_layout"
@@ -39,7 +39,7 @@
                     to see the back arrow -->
                     <View
                         android:layout_width="match_parent"
-                        android:layout_height="112dp"
+                        android:layout_height="128dp"
                         android:background="@drawable/photo_background_protection" />
 
                 </FrameLayout>
@@ -75,10 +75,10 @@
                 android:layout_marginBottom="16dp"
                 android:background="@color/blue_400"
                 android:orientation="vertical"
-                android:paddingBottom="16dp"
-                android:paddingLeft="16dp"
-                android:paddingRight="16dp"
-                android:paddingTop="16dp">
+                android:paddingBottom="@dimen/detail_metabar_vert_padding"
+                android:paddingLeft="@dimen/detail_inner_horiz_margin"
+                android:paddingRight="@dimen/detail_inner_horiz_margin"
+                android:paddingTop="@dimen/detail_metabar_vert_padding">
 
                 <TextView
                     android:id="@+id/article_title"
@@ -113,12 +113,14 @@
         android:id="@+id/share_fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/fab_margin"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginTop="50dp"
         android:contentDescription="@string/action_share"
         android:src="@drawable/ic_share"
         app:borderWidth="0dp"
         app:elevation="@dimen/fab_elevation"
-        app:fabSize="mini"
+        app:fabSize="normal"
         app:layout_anchor="@id/header_bar"
         app:layout_anchorGravity="bottom|right|end"
         app:pressedTranslationZ="@dimen/fab_press_translation_z" />
